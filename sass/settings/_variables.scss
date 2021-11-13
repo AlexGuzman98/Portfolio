@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+//Variables
+$header-height: 3rem;
+$nav-width:324px;
+//font
+$font-medium:500;
+$font-semi-bold:600;
+$font-bold:700;
+//Color
+$first-color:rgb(0, 0, 0);
+$first-color-dark:rgb(26, 26, 26);
+$first-color-darken:rgb(83, 83, 83);
+$text-color:rgb(224, 138, 26);
+$first-color-light:rgb(231, 229, 229);
+$first-color-lighten:rgb(255, 255, 255);
+//Header-text
+$body-font:'Poppins', sans-serif;
+$h1-font-size:1.5rem;
+$h2-font-size:1.25rem;
+$h3-font-size:1rem;
+$normal-font-size:.938rem;
+$small-font-size:.813rem;
+$smaller-font-size:.75rem;
+//Margen
+$mb-1:.5rem ;
+$mb-2:1rem;
+$mb-3:1.5rem;
+$mb-4:2rem;
+$mb-5:2.5rem;
+//Z-index
+$z-fixed:100;
+@media screen and (min-width: 768px){
+    $h1-font-size:2.25rem;
+    $h2-font-size:1.5rem;
+    $h3-font-size:1.25rem;
+    $normal-font-size:1rem;
+    $small-font-size:.875rem;
+    $smaller-font-size:.813rem;
+}
+
+

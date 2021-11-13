@@ -1,0 +1,75 @@
+.nav{
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 .5rem 0 .5rem;
+}
+
+.nav__menu{
+    position: fixed;
+    top: 0;
+    left:-100%;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    background-color: $first-color;
+    transition: .5s ease-out;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+    @media screen and (min-width: 1024px) {
+        width: $nav-width;
+        left: 0;
+    }
+}
+
+.nav__close{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    @media screen and (min-width: 1024px) {
+        display: none;
+      }
+}
+.nav__logo{
+    @media screen and (min-width: 1024px) {
+        display: none;
+      }
+}
+.nav__item{
+    margin-bottom: $mb-4;
+}
+
+.nav__link{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color:$first-color-lighten;
+    font-weight: $font-bold;
+    transition: .3s;
+}
+
+.nav__link:hover{
+    color:$text-color;
+}
+
+.nav__toggle{
+    color: $first-color-dark;
+    font-size: 1.3rem;
+    cursor: pointer;
+    @media screen and (min-width: 1024px) {
+        display: none;
+      }
+}
+.show{
+left: 0;
+}
+
+.active{
+    color: $text-color;
+}

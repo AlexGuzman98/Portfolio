@@ -60,7 +60,7 @@
 }
 
 .home__social-link:hover{
-    background-color: $first-color-dark;
+    background-color: $text-color;
 }
 
 .home__button{
@@ -72,10 +72,14 @@
 
 .button{
     display: inline-block;
-    background-color: $first-color;
+    background-color:$first-color;
     color: white;
     padding: 1rem 2rem;
     font-weight: $font-semi-bold;
     border-radius: .5rem;
     transition: .3s;
+}
+.button:hover{
+    color: black;
+    background-color: $text-color;
 }

@@ -209,7 +209,7 @@ img {
   transition: .3s; }
 
 .home__social-link:hover {
-  background-color: #1a1a1a; }
+  background-color: #e08a1a; }
 
 .home__button {
   width: 80%; }
@@ -225,6 +225,10 @@ img {
   font-weight: 600;
   border-radius: .5rem;
   transition: .3s; }
+
+.button:hover {
+  color: black;
+  background-color: #e08a1a; }
 
 .about__container {
   row-gap: 2rem; }

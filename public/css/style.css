@@ -99,15 +99,18 @@ img {
   top: 0;
   left: -100%;
   width: 90%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   padding: 3rem;
   align-items: center;
   background-color: black;
   transition: .5s ease-out; }
+  @media screen and (min-width: 540px) {
+    .nav__menu {
+      width: 45%; } }
   @media screen and (min-width: 768px) {
     .nav__menu {
-      width: 50%; } }
+      width: 45%; } }
   @media screen and (min-width: 1024px) {
     .nav__menu {
       width: 324px;
@@ -397,6 +400,9 @@ img {
   padding: 1.5rem;
   border-radius: .5rem; }
   @media screen and (min-width: 768px) {
+    .works__container {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (min-width: 560px) {
     .works__container {
       grid-template-columns: repeat(2, 1fr); } }
 

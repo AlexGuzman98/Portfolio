@@ -11,14 +11,17 @@
     top: 0;
     left:-100%;
     width: 90%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     padding: 3rem;
     align-items: center;
     background-color: $first-color;
     transition: .5s ease-out;
+    @media screen and (min-width: 540px) {
+        width: 45%;
+    }
     @media screen and (min-width: 768px) {
-        width: 50%;
+        width: 45%;
     }
     @media screen and (min-width: 1024px) {
         width: $nav-width;

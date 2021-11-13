@@ -13,6 +13,7 @@
 
 
 .works__img{
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     border-radius: .5rem;
@@ -42,6 +43,10 @@
     padding: .25rem;
     border-radius: .25rem;
     margin-bottom: $mb-2;
+}
+.works__link:hover{
+    background-color: black;
+    color: white;
 }
 
 .works__title{

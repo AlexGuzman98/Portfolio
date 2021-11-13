@@ -407,6 +407,7 @@ img {
       grid-template-columns: repeat(2, 1fr); } }
 
 .works__img {
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   border-radius: .5rem;
@@ -434,6 +435,10 @@ img {
   padding: .25rem;
   border-radius: .25rem;
   margin-bottom: 1rem; }
+
+.works__link:hover {
+  background-color: black;
+  color: white; }
 
 .works__title {
   font-size: 1.25rem;

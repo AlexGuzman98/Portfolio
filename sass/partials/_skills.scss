@@ -7,50 +7,43 @@
 
 .skills__subtitle{
     font-size: $h3-font-size;
+    text-transform: uppercase;
     color: $first-color-dark;
     margin-bottom: $mb-2;
 }
 
 .skills__data{
     position: relative;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
-    margin: 0 $mb-2;
+    margin: 0 $mb-1;
     margin-bottom: $mb-4;
 }
 
 .skills__name{
     text-transform: uppercase;
+    font-family: $body-font;
+    font-weight: 500;
+    line-height: 1.6;
+    color: $first-color;
+    cursor: pointer;
 }
 
-.skills__bar{
-    position: absolute;
-    bottom: -.75rem;
-    height: .25rem;
-    background-color: $first-color-dark;
+.skills__name::after{
+    @media screen and (min-width: 768px) {
+        content: "";
+        left: 0;
+        width: 0;
+        bottom: -.2rem;
+        height: .125rem;
+        background-color: $text-color;
+        transition: .5s;
+    }
+  
 }
-
-.skills__html{
-    width: 80%;
-}
-.skills__node{
-    width: 65%;
-}
-.skills__js{
-    width: 80%;
-}
-.skills__react{
-    width: 50%;
-}
-.skills__mongo{
-    width: 50%;
-}
-.skills__mysql{
-    width: 50%;
-}
-.skills__python{
-    width: 60%;
-}
-.skills__sass{
-    width: 75%;
+.skills__name:hover:after{
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        width:100%;
+    }
 }

@@ -56,6 +56,12 @@
     color: $first-color;
     margin-right: $mb-4;
 }
+.about__information-icon:hover{
+    @media screen and (min-width: 768px) {
+        transition: .3s;
+        transform: scale(1.2);
+    }
+}
 
 .about__information-subtitle{
     display: block;

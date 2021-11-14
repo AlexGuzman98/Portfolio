@@ -59,8 +59,12 @@
     transition: .3s;
 }
 
-.home__social-link:hover{
-    background-color: $text-color;
+.home__social-link:hover{ 
+    @media screen and (min-width: 768px) {
+        background-color: $text-color;
+        transform:scale(1.5);
+        color: black;
+    }
 }
 
 .home__button{
@@ -80,6 +84,8 @@
     transition: .3s;
 }
 .button:hover{
-    color: black;
-    background-color: $text-color;
+    @media screen and (min-width: 768px) {
+        color: black;
+        background-color: $text-color;
+    } 
 }

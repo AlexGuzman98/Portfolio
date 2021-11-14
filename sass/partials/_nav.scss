@@ -58,7 +58,9 @@
 }
 
 .nav__link:hover{
-    color:$text-color;
+    @media screen and (min-width: 768px) {
+        color:$text-color;
+    }
 }
 
 .nav__toggle{

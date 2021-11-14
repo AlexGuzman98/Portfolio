@@ -1,5 +1,5 @@
 .footer{
-    background-color: $first-color;
+    background-color: $first-color-dark;
     color: $first-color-lighten;
     text-align: center;
     @media screen and (min-width: 768px) {
@@ -42,11 +42,14 @@
 }
 
 .footer__link:hover{
-    background-color: $first-color-lighten;
-    color: $first-color;
+    @media screen and (min-width: 768px) {
+        background-color: $first-color-lighten;
+        color: $first-color;
+       }
 }
 
 .footer__copy{
+    
     font-size: $smaller-font-size;
     color: $text-color;
     margin-left: $mb-4;

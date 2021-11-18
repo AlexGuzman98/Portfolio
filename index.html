@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === ICON === -->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="public/css/style.css">
@@ -30,7 +32,7 @@
                 </div>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
@@ -304,11 +306,11 @@
             <div class="contact__container db-grid">
                 <form action="" class="contact__form">
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
+                        <input type="text" placeholder="Name" class="contact__input" id="form-name" required>
+                        <input type="email" placeholder="Email" class="contact__input" id="form-email" required>
                     </div>
-                    <input type="text" placeholder="Project" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+                    <input type="text" placeholder="Project or Company" class="contact__input" id="form-company" required>
+                    <textarea name=""  cols="0" rows="10" placeholder="Message" class="contact__input" id="form-message" required></textarea>
                     <input type="submit" value="Send Me a Message" class="button contact__button">
                 </form>
 
@@ -332,6 +334,7 @@
     </footer>
     <!--===== MAIN JS =====-->
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@ contactForm.addEventListener('submit',(e)=>{
     }
   console.log(formData)
 
-  function createUser(formData) {
+  function mailSend() {
     fetch('https://form-port.herokuapp.com/', {
       headers: {
         'Content-Type': 'application/json',
@@ -22,12 +22,8 @@ contactForm.addEventListener('submit',(e)=>{
       body: JSON.stringify(formData),
     })
       .then((response) => response.json())
-      .then((data)=>{
-    console.log(data)
-      });
-      
     alert('Mail send');
   }
- createUser(formData);
+ mailSend();
 });
 

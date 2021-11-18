@@ -25,8 +25,9 @@ contactForm.addEventListener('submit',(e)=>{
       .then((data)=>{
     console.log(data)
       });
-  }
-    createUser(formData);
+      
     alert('Mail send');
+  }
+ createUser(formData);
 });
 

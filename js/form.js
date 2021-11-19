@@ -17,7 +17,6 @@ contactForm.addEventListener('submit',(e)=>{
     fetch('https://form-port.herokuapp.com/', {
       headers: {
         'Content-Type': 'application/json',
-        
       },
       mode: 'no-cors',
       method: 'POST',

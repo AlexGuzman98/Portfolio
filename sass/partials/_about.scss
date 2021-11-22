@@ -1,7 +1,7 @@
 .about__container{
     row-gap: 2rem;
     @media screen and (min-width: 768px) {
-        grid-template-columns: repeat(2,1fr);
+       
     }
 }
 .info_black{
@@ -21,23 +21,15 @@
     }
 }
 
-.about__img{
-    width: 150px;
-    border-radius:.5rem;
-    margin: 0 auto;
-    margin-bottom: $mb-3;
-    @media screen and (min-width: 768px) {
-       width: 200px;
-    }
-}
 .about__information{
     margin-bottom: $mb-4;
+}
+.about_information-div{
     @media screen and (min-width: 768px) {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        display: flex;
+        justify-content: space-between;
     }
 }
-
 .about__information-title{
     font-size: $h3-font-size;
     color: $first-color-dark;

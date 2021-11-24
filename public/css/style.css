@@ -443,48 +443,9 @@ img {
   .works__img:hover .works__data {
     bottom: 0; } }
 
-.contact__container {
-  row-gap: 2rem; }
-
-@media screen and (min-width: 768px) {
-  .contact__inputs {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-    column-gap: 1.3rem; } }
-
-.contact__input {
-  width: 100%;
-  padding: 1rem;
-  outline: none;
-  border: none;
-  background-color: #e7e5e5;
-  font-size: 0.938rem;
-  margin-bottom: 1rem;
-  border-radius: .5rem; }
-  @media screen and (min-width: 768px) {
-    .contact__input {
-      display: grid;
-      column-gap: 1.5rem; } }
-
-.contact::placeholder {
-  color: #1a1a1a;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500; }
-
-.contact__button {
-  outline: none;
-  border: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.938rem;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto; }
-
-.contact__info {
-  margin-bottom: 1.5rem; }
-  @media screen and (min-width: 768px) {
-    .contact__info {
-      padding: 1rem; } }
+.sil-widget {
+  display: flex;
+  justify-content: center; }
 
 .footer {
   background-color: #1a1a1a;

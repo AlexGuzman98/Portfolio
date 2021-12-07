@@ -62,7 +62,7 @@
                                 class='bx bxl-instagram'></i></a>
 
                     </div>
-                    <a download href="pdf/AlexCV-EN.pdf" class="button home__button">Download CV</a>
+                    <a download href="pdf/adguzmanCV.pdf" class="button home__button">Download CV</a>
                 </div>
             </div>
         </section>
@@ -255,7 +255,7 @@
                     <div class="works__data">
                         <a href="https://alexguzman98.github.io/Tiki/" target="_blank" class="works__link"><i
                                 class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work 1</span>
+                        <span class="works__title">Music Player</span>
                     </div>
                 </div>
 
@@ -264,16 +264,25 @@
                     <div class="works__data">
                         <a href="https://cetav-ddw.github.io/museos-llevar/" target="_blank" class="works__link"><i
                                 class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work 2</span>
+                        <span class="works__title">Museos Para Llevar</span>
                     </div>
                 </div>
 
                 <div class="works__img">
-                    <img src="img/psd.png" alt="">
+                    <img src="img/skateShop.png" alt="">
                     <div class="works__data">
-                        <a href="https://alexguzman98.github.io/PSD-PROYECTO2/" target="_blank" class="works__link"><i
-                                class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work 3</span>
+                        <a href="https://fbarqueroz.github.io/JR-Skateboarding/" target="_blank"
+                            class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__title">SkateShop</span>
+                    </div>
+                </div>
+
+                <div class="works__img">
+                    <img src="img/portfoliov.1.png" alt="">
+                    <div class="works__data">
+                        <a href="https://alexguzman98.github.io/Portafolio/" target="_blank"
+                            class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Portfolio v.1</span>
                     </div>
                 </div>
 
@@ -282,25 +291,27 @@
                     <div class="works__data">
                         <a href=" https://alexguzman98.github.io/PSD-to-HTML2/" target="_blank" class="works__link"><i
                                 class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work 4</span>
+                        <span class="works__title">PSD to HTML</span>
                     </div>
                 </div>
 
+
                 <div class="works__img">
-                    <img src="img/creative.png" alt="">
+                    <img src="img/psd.png" alt="">
                     <div class="works__data">
-                        <a href="https://alexguzman98.github.io/Psd-To-html-SASS-1/" target="_blank"
-                            class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work 5</span>
+                        <a href="https://alexguzman98.github.io/PSD-PROYECTO2/" target="_blank" class="works__link"><i
+                                class="bx bx-link-alt"></i></a>
+                        <span class="works__title">PSD to HTML</span>
                     </div>
                 </div>
+              
 
                 <div class="works__img">
                     <img src="img/hotel.png" alt="">
                     <div class="works__data">
                         <a href="https://andryk-lara.github.io/Proyecto-Hotel/" target="_blank" class="works__link"><i
                                 class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work 6</span>
+                        <span class="works__title">Project Hotel</span>
                     </div>
                 </div>
             </div>
@@ -312,16 +323,24 @@
             <h2 class="section-title">GO AHEAD</h2>
 
             <div class="contact__container db-grid">
-                <form action="" method="POST" class="contact__form" netlify-honeypot="bot-field" data-netlify="true">
+                <form action="" name="contact" method="POST" class="contact__form" data-netlify-recaptcha="true" data-netlify="true">
+                    
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input" id="form-name" required>
-                        <input type="email" placeholder="Email" class="contact__input" id="form-email" required>
+                        <input name="Name" type="text" placeholder="Name" class="contact__input" id="form-name" required>
+                        <input name="Email" type="email" placeholder="Email" class="contact__input" id="form-email" required>
                     </div>
-                    <input type="text" placeholder="Project or Company" class="contact__input" id="form-company"
-                        required>
-                    <textarea name="" cols="0" rows="10" placeholder="Message" class="contact__input" id="form-message"
-                        required></textarea>
+
+                    <input name="Company" type="text" placeholder="Project or Company" class="contact__input" id="form-company">
+                    <textarea name="Message" cols="0" rows="10" placeholder="Message" class="contact__input" id="form-message" required></textarea>
+
+                    <div class="recaptcha">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                    
                     <input type="submit" value="Send Me a Message" class="button contact__button">
+
+                   
+                  
                 </form>
             </div>
         </section>
